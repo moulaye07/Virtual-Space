@@ -5,7 +5,6 @@ const fileModel = require('../models//file.models');
 
 
 router.get('/', directoryController.readAllDirectories);
-//router.get('/:id', directoryController.readDirectory);
 router.post('/', directoryController.createDirectory);
 router.put('/:id', directoryController.updateDirectory);
 router.delete('/:id', directoryController.deleteDirectory);
