@@ -3,11 +3,10 @@ import React, { useState } from 'react';
 
 const Admins = ({user}) => {
 	const [showForm1, setShowForm1] = useState(false);
-    const [roleUpdate, setRoleUpdate] = useState(user.role);
+    	const [roleUpdate, setRoleUpdate] = useState(user.role);
 	const [userNameUpdate, setUserNameUpdate] = useState(user.username);
-
-
-    const deleteUser = async () => {
+   
+   const deleteUser = async () => {
 		try {
 			await axios.delete(`${process.env.REACT_APP_API_URL}user/${user._id}`);
 		} catch (err) {
