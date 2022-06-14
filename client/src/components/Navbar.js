@@ -18,16 +18,7 @@ const Navbar = () => {
     const searchFunction = (e) => {
         e.preventDefault()
         setQueryState(searchQuery);
-        /*const result = directories.filter(e=>e.name.includes(searchQuery));
-        const result1 = files.filter(e=>e.name.includes(searchQuery));
-        result1.map((e)=>{
-            result.push(e)
-        })
-        console.log("separation");
-        console.log(result);
-        */
     }
-
 
     useEffect(() => {
 		if(queryState===null){
