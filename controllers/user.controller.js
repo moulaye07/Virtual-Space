@@ -19,7 +19,6 @@ module.exports.userData = (req,res) => {
 }
 
 
-//attention verifier si user n'est pas encore supprimmé et cripté le mot de passe
 module.exports.updateUserData = async (req, res) => {
     if (!ObjectId.isValid(req.params.id))
         return res.status(400).send('Identifiant inconnu : ' + req.params.id)
@@ -47,7 +46,6 @@ module.exports.updateUserData = async (req, res) => {
     }
 }
 
-// attention verification si user n'est pas deja supprimé sinon le serveur va planter
 module.exports.deleteUser = async (req, res) => {
     if (!ObjectId.isValid(req.params.id))
         return res.status(400).send('Identifiant inconnu : ' + req.params.id)
