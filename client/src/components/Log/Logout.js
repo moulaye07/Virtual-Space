@@ -2,8 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import cookie from "js-cookie";
 
-
-
 const Logout = () => {
     
     const removeCookie = (key) => {
