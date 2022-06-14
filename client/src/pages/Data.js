@@ -37,11 +37,6 @@ const Data = () => {
 
 	const [taille, setTaille] = useState(false);
 	const [valeurtaille, setValeurTaille] = useState(null);
-
-
-
-
-
 	
 	useEffect(() => {
 		const getChildren = async () => {
